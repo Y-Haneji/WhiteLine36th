@@ -1,0 +1,193 @@
+@charset "utf-8";
+
+.contact{
+	list-style-type: none;
+}
+
+.contact a{
+	display:block;
+	text-decoration: none;
+	animation: twitter-icon 3s ease 0s 1 normal;
+	animation: instagram-icon 4s ease 0s 1 normal;
+}
+
+@keyframes twitter-icon{
+	0%{opacity: 0}
+	100%{opacity: 1}
+}
+
+@keyframes instagram-icon{
+	0%{opacity: 0}
+	100%{opacity: 1}
+}
+.keyvisual{
+	position: relative;
+	margin: 0;
+}
+
+.keyvisual-logo img:first-child{
+	position: absolute;
+	top: 8%;
+	bottom:10%; 
+	left: 12%;
+	right: 10%;
+	width: 75%;
+	height: auto;
+	opacity: 1;
+
+}
+
+
+
+
+.contact .twitter-icon{
+	position: absolute;
+	bottom: 2%;
+	left: 70%;
+	transition: 0.3s;
+	transform: scale(1)
+	
+}
+.contact .instagram-icon{
+	position: absolute;
+	bottom: 2%;
+	left: 85%;
+	transition: 0.3s;
+	transform: scale(1)
+}
+
+.contact .twitter-icon:hover{
+	opacity: 1;
+	transform: scale(1.05);
+}
+.contact .twitter-icon:active{
+	transform: translate(0,2px);
+}
+
+.contact .instagram-icon:hover{
+	opacity: 1;
+	transform: scale(1.05);
+}
+
+.contact .instagram-icon:active{
+	transform: translate(0,2px);
+}
+
+
+.info{
+	margin: 20px;
+}
+
+.info-inner {
+    position: relative;
+    margin: 2em 0;
+    padding: 0.5em 1em;
+    border: solid 3px lightblue;
+    border-radius: 8px;
+    height: 8.7em;
+    overflow: auto;
+}
+.info .box-title {
+    position: absolute;
+    display: inline-block;
+    top: -13px;
+    left: 10px;
+    padding: 0 9px;
+    line-height: 1;
+    font-size: 19px;
+    background: #FFF;
+    color: darkblue;
+    font-weight: bold;
+    z-index: 9999;
+}
+.info li {
+    margin: 0 0 0 10px; 
+    padding: 0;
+}
+
+
+
+
+main{
+	background: white;
+}
+
+
+.main-title h3{
+	margin: 10px 0;
+	text-align: center;
+	border-top:  dashed 4px yellow;
+	border-bottom: dashed 4px yellow;
+}
+.menu-wrapper{
+
+	display: flex;
+	flex-flow: column;
+}
+
+.main-menu a{
+	text-decoration:none;
+	display: block;
+	margin: 0;
+
+}
+
+.main-menu li{
+	display: block;
+	list-style-type: none;
+	border: solid 2px black;
+	flex: 1 1 auto;
+	border-radius: 2%;
+}
+
+.main-menu li{
+	background-image: linear-gradient(rgba(0,0,0,0) 50%, rgba(255,255,224,1) 50%);
+	background-position: 0 0;
+	background-size: auto 200%;
+	transition: .3s;
+	color: yellow;
+	margin: 30px 10px;
+	transform: scale(1)
+}
+.main-menu li:hover {
+	background-position: 0 100%;
+	color: yellow;
+	transform: scale(1.05)!important; 
+}
+
+
+.main-menu li:active{
+	transform: translate(0,2px)!important;
+}
+
+.main-menu figcaption{
+	background-color: lightyellow;
+	color: black;
+	font-weight: bold;
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+
+.main-menu .menu-wrapper img{
+	opacity: 1;
+}
+
+
+
+
+
+
+@media screen and (min-width: 768px){
+	.menu-wrapper {
+		flex-flow: row;
+	}
+	
+	.main-menu img{
+		text-align: center;
+	}
+	.main-menu li{
+		margin: 10px;
+	}
+	
+}

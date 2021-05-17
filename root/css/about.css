@@ -1,0 +1,98 @@
+@charset "utf-8";
+
+.about-title{
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+  background-color: lightyellow;
+}
+
+
+.about-title h2{
+  position: relative;/*相対位置*/
+  line-height: 1.4;/*行高*/
+  display: inline-block;
+}
+
+.about-title h2::before, .about-title h2::after { 
+  position: relative;
+  font-family: "Font Awesome 5 Free";
+  display: inline-block;
+  font-size: 1.0em;
+  color: #ff6a6a;
+}
+.about-title h2::before {
+  content:"\f053";/*アイコン種類*/
+  padding-right: 0.5em
+}
+.about-title h2::after {
+  content:"\f054";/*アイコン種類*/
+  padding-left: 0.5em
+}
+
+.about-heading {
+  position: relative;/*相対位置*/
+  padding-left: 1.2em;/*アイコン分のスペース*/
+  line-height: 1.4;/*行高*/
+}
+
+.about-heading::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f075";/*アイコンのユニコード*/
+  position: absolute;/*絶対位置*/
+  font-size: 1em;/*サイズ*/
+  left: 0;/*アイコンの位置*/
+  top: 0;/*アイコンの位置*/
+  color: #5ab9ff; /*アイコン色*/
+}
+
+.about{
+	padding-top: 100px;
+}
+
+.about p{
+	padding: 0 1em;
+}
+.main-inner{
+	background-color: white;
+	padding: 0 2%;
+}
+
+main{
+	background-color: lightblue;
+}
+
+
+.btn-flat-vertical-border {
+  position: relative;
+  display: block;
+  font-weight: bold;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  border-left: solid 4px #668ad8;
+  border-right: solid 4px #668ad8;
+  color: #668ad8;
+  background: #e1f3ff;
+  transition: .4s;
+  margin: 2em;
+  font-size: 1.25em;
+}
+
+.btn-flat-vertical-border:hover {
+  background: #668ad8;
+  color: #FFF;
+}
+
+.btn-flat-vertical-border:active{
+	color: lightblue;
+}
+
+.last-btn{
+	margin: 2em 2em 0 2em;
+}
+
+@media only screen and (min-width: 768px){
+	.main-inner{
+		margin: 0 15%;
+	}
+}
