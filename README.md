@@ -1,2 +1,3 @@
 # WhiteLine36th
-WhiteLine36thのwebページ
+
+大学の所属サークルWhiteLine36thのwebページ
